@@ -5,6 +5,7 @@
  * 2. Scalable
  */
 
+//not best
 function sumOfAll_one(n) {
   let total = 0;
 
@@ -14,6 +15,7 @@ function sumOfAll_one(n) {
   return total;
 }
 
+//Best
 function sumOfAll_two(n) {
   return (n * (n + 1)) / 2;
 }
@@ -29,3 +31,8 @@ let time4 = performance.now();
 console.log("first Function", (time4 - time3) / 1000);
 
 /**Function one take more time then function two */
+
+/*
+in the second function only one line executed then find the answer so O(1)
+but in the first function the function was in a loop O(n)
+*/
